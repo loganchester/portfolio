@@ -1,0 +1,36 @@
+.side-header {
+    padding: 2px;
+}
+
+.side-title {
+    padding: 2px;
+}
+
+.side-options-list {
+    padding: 2px;
+    margin: auto;
+    display: flex;
+}
+
+.side-options-list label {
+    width: 380px;
+}
+
+.side-options-list select {
+    width: 100px;
+}
+
+.side-chosen-button {
+    padding: 2px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.side-chosen-button button {
+    height: 50px;
+    width: 385px;
+}
+
+.side-body {
+    padding: 0px;
+}

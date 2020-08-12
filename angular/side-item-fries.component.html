@@ -1,0 +1,48 @@
+<!-- Side container -->
+<div class="side-container">
+
+    <!-- Header -->
+    <div class="side-header fries-header" (click)="reveal()">
+
+        <!-- Title -->
+        <div class="side-title fries-title">
+            <h3>{{name}}</h3>
+        </div><!-- /Title -->
+
+        <!-- Desc -->
+        <div class="side-desc fries-desc">
+            <p>{{desc}}</p>
+        </div>
+
+    </div><!-- /Header -->
+
+    <!-- Body -->
+    <div *ngIf="friesReveal" class="side-body fries-body">
+
+        <!-- Options form -->
+        <form #f="ngForm">
+
+            <!-- Option list -->
+            <div class="side-options-list">
+                <label for="friesOptions">What size of fries would you like?</label>
+                <select [(ngModel)]="optionSelected"
+                        required
+                        name="friesOptions" 
+                        #friesOptions="ngModel"
+                        id="friesOptions" 
+                        class="form-control">
+                    <option *ngFor="let option of options"
+                            [ngValue]="option">{{option.name}}</option>
+                </select>
+            </div><!-- /Option list -->
+
+        </form><!-- /Options form -->
+
+        <!-- Choose Button -->
+        <div class="side-chosen-button fries-chosen-button">
+            <button (click)="sendToParent()" [disabled]="!f.valid">Choose this side</button>
+        </div><!-- /Choose Button -->
+
+    </div><!-- /Body -->
+
+</div><!-- /Side container -->
