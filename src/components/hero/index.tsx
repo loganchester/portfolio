@@ -7,7 +7,7 @@ import Skills from "../skills";
 const Hero: React.FC = () => {
   return (
     <div className="relative flex items-center min-h-screen px-8 mx-auto">
-      <div className="flex flex-col gap-2 relative mx-auto">
+      <div className="z-10 flex flex-col gap-2 relative mx-auto">
         <h1 className="text-gray-400 text-2xl font-semibold">
           Full-Stack Developer
         </h1>
