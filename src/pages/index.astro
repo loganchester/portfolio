@@ -1,0 +1,22 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Projects from "@/components/projects";
+import Contact from "@/components/contact";
+import Skills from "@/components/skills";
+import SectionHeader from "@/components/section/header";
+import Hero from "@/components/hero";
+---
+
+<Layout title="Logan Chester - Portfolio">
+  <section id="home">
+    <Hero client:load />
+  </section>
+  <section id="projects" class="pt-16">
+    <SectionHeader text="Projects" />
+    <Projects client:load />
+  </section>
+  <section id="contact" class="pt-16 mb-32">
+    <SectionHeader text="Contact" />
+    <Contact client:load />
+  </section>
+</Layout>
