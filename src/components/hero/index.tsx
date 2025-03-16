@@ -13,13 +13,14 @@ const Hero: React.FC = () => {
         </h1>
         <h2 className="text-white text-4xl font-bold">Logan Chester</h2>
         <h4 className="text-white max-w-[560px]">
-          With a degree from the{" "}
-          <span className="font-bold text-purple">Univeristy of Toronto</span>{" "}
-          specializing in{" "}
+          With a{" "}
           <span className="font-bold text-purple">Software Engineering</span>{" "}
-          and 5 years of professional experience as a Developer, I specialize in{" "}
+          degree from the{" "}
+          <span className="font-bold text-purple">Univeristy of Toronto</span>{" "}
+          and 5 years of professional experience as a Developer, I specialize in
+          building dynamic web applications with{" "}
           <span className="font-bold text-purple">React</span> and{" "}
-          <span className="font-bold text-purple">Django</span> web development.
+          <span className="font-bold text-purple">Django</span>.
         </h4>
         <div className="flex items-center gap-2 py-2">
           <Button variant="secondary" onClick={() => navigate("#projects")}>

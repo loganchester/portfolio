@@ -18,9 +18,9 @@ export const socialData: SocialLink[] = [
     src: "https://github.com/loganchester",
     icon: <FontAwesomeIcon icon={faGithub} className="text-white size-8" />,
   },
-  {
-    name: "Instagram",
-    src: "https://www.instagram.com/loganjchester_/?hl=en",
-    icon: <FontAwesomeIcon icon={faInstagram} className="text-white size-8" />,
-  }
+  // {
+  //   name: "Instagram",
+  //   src: "https://www.instagram.com/loganjchester_/?hl=en",
+  //   icon: <FontAwesomeIcon icon={faInstagram} className="text-white size-8" />,
+  // }
 ];
